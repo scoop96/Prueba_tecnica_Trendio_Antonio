@@ -1,0 +1,57 @@
+using the endpoint http://localhost:8000/graphql
+
+you can use this petitions to test the app.
+
+        all_countries - GET :
+        query {
+        all_countries {
+            id
+            country_name
+            language 
+            total_population
+        }
+        }
+
+
+all_countries_with_cities - GET :
+
+        query {
+        all_countries_with_cities {
+            country_name
+            language
+            cities {
+            city_name
+            }
+        }
+        }
+
+
+
+create_country - POST :
+
+        mutation {
+            update_country(
+            country_name: "United Kigndom",
+            language: "EN"
+        ) {country {
+            id
+            country_name
+            language
+            
+        }
+        }}
+create_city - POST :
+
+        mutation {
+            create_city(
+            city_name: "London",
+            population: 8825000  # Provide the population
+            country_fk: "3"
+        ) {city {
+            id
+            city_name
+            population 
+            country_fk_id
+            }
+        }
+        }

@@ -1,0 +1,54 @@
+[
+    {
+      "fields": {
+        "country_name": "Spain",
+        "language" : "ES"
+      },
+      "model": "world.country",
+      "pk": 1
+    },
+    {
+      "fields": {
+        "country_name": "Italy",
+        "language" : "IT"
+      },
+      "model": "world.country",
+      "pk": 2
+    },
+    {
+      "fields": {
+        "country_fk": 1,
+        "city_name": "Madrid",
+        "population": 60000
+      },
+      "model": "world.city",
+      "pk": 1
+    },
+    {
+      "fields": {
+        "country_fk": 1,
+        "city_name": "Gijon",
+        "population": 5123000
+      },
+      "model": "world.city",
+      "pk": 2
+    },
+    {
+      "fields": {
+        "country_fk": 2,
+        "city_name": "Fiorence",
+        "population": 1000
+      },
+      "model": "world.city",
+      "pk": 3
+    },
+    {
+      "fields": {
+        "country_fk": 2,
+        "city_name": "Rome",
+        "population": 123
+      },
+      "model": "world.city",
+      "pk": 4
+    }
+  ]
